@@ -1,0 +1,44 @@
+﻿@if (Model.IsAdmin == true) // Check if the user is an admin
+{
+    Layout = "_AdmainLayout"; // Set the layout to the admin layout
+}
+else
+{
+    Layout = "_UserLayout"; // Set the layout to the user layout
+}
+
+@model modelfor_archive.Models.UserAcc // Specify the model for this view
+
+<div class="row">
+    <div class="col-md-3 border-right">
+        <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+            <img class="rounded-circle mt-5" width="150px" src="https://assets.nicepagecdn.com/11a8ddce/4584696/images/24770152_101.png">
+            <span class="font-weight-bold"></span><span class="text-black-50"></span>
+        </div>
+    </div>
+    <div class="col-md-5 border-right">
+        <div class="p-3 py-5">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h1 class="text-right">Help</h1>
+            </div>
+            <div>
+                <p>
+                    Our support team is available to help you with any issues or technical difficulties you may encounter while using our platform. You can reach out to us through the <a href="/Home/UserHome/#contact">Contact Us</a> section on our website. We strive to provide prompt and efficient assistance to ensure that your experience with our platform is seamless.
+
+                    We value your feedback and suggestions for improving our platform. If you have any ideas or suggestions, please don't hesitate to share them with us. We are constantly working to enhance the functionality and usability of our platform based on user feedback.
+
+                    Lastly, for more detailed information about our company and the services we offer, we encourage you to visit the <a href="/Home/UserHome/#about">About Us</a> section on our website. This section provides an overview of our mission, values, and the team behind our platform. You can also learn more about our commitment to data security and privacy.
+
+                    Thank you for choosing our Archive Website. We are dedicated to providing a reliable and user-friendly platform for all your data storage and organization needs.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .center {
+        margin: 20px;
+        margin-left: 25%;
+    }
+</style>

@@ -1,0 +1,78 @@
+﻿@{
+    Layout = "_UserLayout"; // Set the layout for this view
+}
+
+<head>
+    <!-- ... -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+            background: linear-gradient(rgb(255 255 255 0.7), rgb(255 255 255 0.7)); /* Background style for the swiper container */
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        body {
+            background-image: url(https://cdn.salla.sa/bjPbA/4mBPEQf7L6jaGCts6Xd6ExF0NabVHP7WAbp33DXz.jpg); /* Set the background image for the body */
+            background-repeat: repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .headerStyle {
+            color: burlywood; /* Style for the header text */
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div asp-controller="User" asp-action="ViewMessage">
+        <h1 class="headerStyle">Attachment View</h1> <!-- Heading for the attachment view -->
+        <div class="swiper-container">
+            <!-- Swiper container for image slider -->
+            <div class="swiper-wrapper">
+                @foreach (var item in ViewBag.MessageAttachments)
+                {
+                    <div class="swiper-slide">
+                        <img src="~/Attachments/@item.AttFile"> <!-- Display the image from the attachments -->
+
+                    </div>
+                }
+
+            </div>
+            <div class="swiper-pagination"></div> <!-- Pagination for the image slider -->
+            <div class="swiper-button-next"></div> <!-- Next button for the image slider -->
+            <div class="swiper-button-prev"></div> <!-- Previous button for the image slider -->
+        </div>
+        <div style="display: flex; justify-content: center;"></div> <!-- Empty container with centered content -->
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <!-- Include the Swiper library -->
+    <script>
+        var swiper = new Swiper('.swiper-container', { // Initialize the Swiper slider
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>

@@ -1,0 +1,373 @@
+﻿@model modelfor_archive.Models.Messages
+
+@{
+    Layout = "_UserLayout";
+}
+
+<style>
+    body {
+        background-image: url('../sendandview/img/gggg.jpg');
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .image-container {
+        height: 100%;
+    }
+
+    .full-screen-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: fixed;
+    }
+
+    .form-container {
+        height: 480px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px
+    }
+
+    .form-group input {
+        flex: 1;
+    }
+
+    .form-label {
+        font-size: 14px;
+    }
+
+    .form-control-lg {
+        font-size: 14px;
+    }
+    /* center the send button */
+    form button[type="submit"] {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+</style>
+<style>
+    /* Styles for the modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 10%;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+</style>
+
+
+<style>
+    /* Styles for the modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .selected-options-modal-list {
+        padding: 0;
+    }
+
+    .selected-option-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
+
+        .selected-option-item span {
+            cursor: pointer;
+        }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 60%; /* Adjust the width as per your preference */
+    }
+
+    .remove-option {
+        text-align: center;
+    }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+<header style="text-align: center">
+    <h1 style="color:#99561B">Send Message</h1>
+</header>
+
+<section class="vh-100">
+    <div class="form-outline mb-4">
+        <div class="form-container">
+            <form id="message-form" asp-controller="User" asp-action="SendMessage" method="post" enctype="multipart/form-data">
+                <div>
+                    <!-- Title -->
+                    <div class="form-group">
+                        <label asp-for="Title" class="form-label" for="form1Example13">Title</label>
+                        <input asp-for="Title" required style="text-align: center" type="text" id="title" name="title" value="@Model.Title" class="form-control form-control-lg" />
+                        <span class="text-danger">@Html.ValidationMessageFor(model => model.Title, "")</span>
+                    </div>
+
+                    <br />
+
+                    <!-- Destinations -->
+                    <select style="border-radius: 8px;" id="dropdown" required>
+                        <option value="">Select an option</option>
+                        @foreach (var email in ViewBag.UsersList)
+                        {
+                            <option value="@email">@email</option>
+                        }
+                    </select>
+
+                    <script>
+                        $(document).ready(function () {
+                            $('#dropdown').select2();
+                        });
+                    </script>
+
+                    <!-- The modal -->
+                    <div id="modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2>Selected Options:</h2>
+                            <ul id="selected-options-modal" class="selected-options-modal-list"></ul>
+                        </div>
+                    </div>
+
+                    <button id="add-option-btn" type="button" style="border-radius: 10px; background-color: #99561B; border-color: white; color: white;">Add</button>
+
+                    <button id="show-options-btn" style="width: 140px; height: 40px; border: hidden; color: #99561B; font-weight: bold; border-radius: 10px; " type="button">Selected Users</button>
+                    <br />
+                    <br />
+                    <!-- The content of the letter -->
+                    <div class="form-group">
+                        <label class="form-label" for="form1Example23">The content of the letter</label>
+                        <textarea asp-for="MessageText" type="text" style="text-align: center" value="@Model.MessageText" id="MessageText" name="MessageText" class="form-control form-control-lg" rows="4" cols="50"></textarea>
+                        <span class="text-danger">@Html.ValidationMessageFor(model => model.MessageText, "")</span>
+                    </div>
+                    <!-- Attachments -->
+                    <div class="form-group">
+                        <label class="form-label" for="form1Example23">Attachments</label>
+                        <input id="attachmentInput" type="file" class="form-control" name="AttFile" multiple accept=".jpg,.jpeg,.png,.pdf,.doc,.docx" />
+                        <span class="text-danger" id="attachmentValidationMessage">@Html.ValidationMessageFor(model => model.Attachments, "")</span>
+                        <span class="text-danger" id="attachmentSizeValidationMessage"></span>
+                    </div>
+
+                    <script>
+                        var attachmentInput = document.getElementById('attachmentInput');
+                        var attachmentValidationMessage = document.getElementById('attachmentValidationMessage');
+                        var attachmentSizeValidationMessage = document.getElementById('attachmentSizeValidationMessage');
+
+                        attachmentInput.addEventListener('change', function () {
+                            var files = attachmentInput.files;
+                            var allowedExtensions = ['.jpg', '.jpeg', '.png'];
+                            var maxSize = 10 * 1024 * 1024; // 10 MB in bytes
+
+                            for (var i = 0; i < files.length; i++) {
+                                var file = files[i];
+                                var fileExtension = '.' + file.name.split('.').pop().toLowerCase();
+
+                                if (allowedExtensions.indexOf(fileExtension) === -1) {
+                                    attachmentValidationMessage.innerText = 'Only image, PDF, or DOC files are allowed.';
+                                    attachmentInput.value = ''; // Reset the file input value
+                                    return;
+                                }
+
+                                if (file.size > maxSize) {
+                                    attachmentSizeValidationMessage.innerText = 'File size should not exceed 10 MB.';
+                                    attachmentInput.value = ''; // Reset the file input value
+                                    return;
+                                }
+                            }
+
+                            attachmentValidationMessage.innerText = '';
+                            attachmentSizeValidationMessage.innerText = '';
+                        });
+                    </script>
+
+
+                    <!-- Hidden input to store selected options -->
+                    <input id="selected-options-input" type="hidden" name="MessageDestinationVisible" />
+                    <br />
+                    <br />
+                    <!-- Submit button -->
+                    <div style="text-align: center">
+                        <input type="submit" class="btn btn-success mb-4 form-control" value="Send"
+                               style="text-align: center;  height: 50px; width: 120px; background-color: #99561B;border-color: white; border-radius: 25px; color: white; padding: 10px 20px;" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script>
+    const dropdown = document.getElementById('dropdown');
+    const addOptionButton = document.getElementById('add-option-btn');
+    const showOptionsButton = document.getElementById('show-options-btn');
+    const selectedOptionsModal = document.getElementById('selected-options-modal');
+    const modal = document.getElementById('modal');
+    const closeIcon = document.getElementsByClassName('close')[0];
+    const selectedOptionsInput = document.getElementById('selected-options-input');
+    const form = document.getElementById('message-form');
+
+    let selectedOptions = [];
+
+    // Event listener for the Add Option button
+    addOptionButton.addEventListener('click', () => {
+        const selectedOption = dropdown.value;
+        if (selectedOption && !selectedOptions.includes(selectedOption)) {
+            selectedOptions.push(selectedOption);
+            const optionItem = document.createElement('li');
+            optionItem.classList.add('selected-option-item');
+            optionItem.innerHTML = `
+                                            <span>${selectedOption}</span>
+                                            <span class="remove-option" data-option="${selectedOption}">&times;</span>
+                                        `;
+            selectedOptionsModal.appendChild(optionItem);
+        }
+    });
+
+    // Event listener for the Show Selected Options button
+    showOptionsButton.addEventListener('click', () => {
+        modal.style.display = 'block';
+    });
+
+    // Event listener for the Close icon in the modal
+    closeIcon.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    // Event listener for removing selected options
+    selectedOptionsModal.addEventListener('click', (event) => {
+        if (event.target.className === 'remove-option') {
+            const optionToRemove = event.target.dataset.option;
+            const optionItem = event.target.parentNode;
+            const optionIndex = selectedOptions.indexOf(optionToRemove);
+            if (optionIndex !== -1) {
+                selectedOptions.splice(optionIndex, 1);
+                optionItem.parentNode.removeChild(optionItem);
+            }
+        }
+    });
+
+    // Event listener for form submission
+    form.addEventListener('submit', (event) => {
+        if (selectedOptions.length === 0) {
+            event.preventDefault(); // Prevent form submission
+            alert('Please select at least one user from the list.');
+        } else {
+            const existingOptionsInput = document.querySelector('input[name="MessageDestinationVisible"]');
+            if (existingOptionsInput) {
+                existingOptionsInput.parentNode.removeChild(existingOptionsInput);
+            }
+
+            const optionsInput = document.createElement('input');
+            optionsInput.type = 'hidden';
+            optionsInput.name = 'MessageDestinationVisible';
+            optionsInput.value = selectedOptions.join(',');
+            form.appendChild(optionsInput);
+        }
+    });
+
+    closeIcon.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    // Event listener for clicks outside the modal
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+
+    // Function to filter the dropdown options based on user input
+    const filterOptions = (event) => {
+        const searchTerm = event.target.value.toLowerCase();
+        const options = Array.from(dropdown.options);
+        options.forEach((option) => {
+            if (option.value.toLowerCase().includes(searchTerm)) {
+                option.style.display = '';
+            } else {
+                option.style.display = 'none';
+            }
+        });
+    };
+
+    // Event listener for the dropdown search input
+    dropdown.addEventListener('input', filterOptions);
+
+    selectedOptionsModal.addEventListener('click', (event) => {
+        if (event.target.className === 'remove-option') {
+            const optionToRemove = event.target.dataset.option;
+            const optionItem = event.target.parentNode;
+            const optionIndex = selectedOptions.indexOf(optionToRemove);
+            if (optionIndex !== -1) {
+                selectedOptions.splice(optionIndex, 1);
+                optionItem.parentNode.removeChild(optionItem);
+            }
+        }
+    });
+</script>

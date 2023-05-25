@@ -1,0 +1,303 @@
+﻿@{
+    Layout = "_UserLayout";
+}
+<style>
+    body {
+        background-color: #F2EBE9;
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .image-container {
+        height: 100%;
+    }
+
+    .full-screen-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: fixed;
+    }
+
+    .form-container {
+        height: 480px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-group input {
+        flex: 1;
+    }
+
+    .form-label {
+        font-size: 14px;
+    }
+
+    .form-control-lg {
+        font-size: 14px;
+    }
+
+    .thumbnail {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        overflow: hidden;
+    }
+
+        .thumbnail img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+</style>
+
+<style>
+    /* Modal styles */
+    #modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 60%;
+        max-width: 400px;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    /* Selected options styles */
+    #selected-options-modal {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .selected-option-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+        .selected-option-item span {
+            padding: 5px;
+        }
+
+    .remove-option {
+        color: #999;
+        cursor: pointer;
+    }
+
+        .remove-option:hover {
+            color: #555;
+        }
+</style>
+
+
+
+
+<section class="vh-100">
+    @model modelfor_archive.Models.Messages
+
+
+    <div class="form-outline mb-4">
+
+        <header style="text-align: center">
+            <br />
+            <h1 style="color:#24150E"> View Message </h1>
+        </header>
+        <br />
+
+        <div class="form-container">
+            <form asp-controller="User" asp-action="ViewMessage" method="get">
+                <style>
+                    /* Your existing CSS code here */
+
+                    form button {
+                        display: block;
+                        margin: 0 auto;
+                        border-radius: 10px; /* Add border-radius property with a value to set the desired rounded edge */
+                    }
+                </style>
+
+                <div>
+                    <!--Title-->
+                    <div>
+                        <label style="color:#3F2A1D" class="form-label" for="form1Example13">Title</label>
+                        <input style="text-align: center" type="text" id="form1Example13" value="@Model.Title" class="form-control form-control-lg" readonly />
+
+                    </div>
+                    <!--send Date -->
+                    <div>
+                        <label style="color:#3F2A1D" class="form-label" for="form1Example23">Send Date</label>
+                        <input type="datetime" style="text-align: center" id="form1Example13" value="@Model.SendDate" class="form-control form-control-lg" readonly />
+                    </div>
+                    <!-- Address of the letter -->
+                    <div>
+                        <label style="color:#3F2A1D" class="form-label" for="form1Example23"> Address of the letter</label>
+                        <input type="text" style="text-align: center" id="form1Example13" value="@Model.MessageAddress" class="form-control form-control-lg" readonly />
+                    </div>
+
+                    <!-- The content of the letter -->
+                    <div>
+                        <label style="color:#3F2A1D" class="form-label" for="form1Example23"> The content of the letter</label>
+                        <textarea type="text" style="text-align: center" id="form1Example13" class="form-control form-control-lg" readonly rows="3" cols="50">@Model.MessageText</textarea>
+                    </div>
+                    <br />
+                    <!-- The destination from which the letter was received -->
+                    <td>
+                        <button style=" width:420px; border-radius: 15px;" class="btn btn-outline-primary btn-sm rounded-0 show-recipients-button" type="button"
+                                data-recipients="@Model.MessageDestination" data-toggle="tooltip" data-placement="top"
+                                title="Show Recipients">
+                            Show Recipients
+                        </button>
+                    </td>
+
+                    <br />
+                    <br />
+                    <div style="display: flex; justify-content: center;">
+                        <!--    asp-route-id=" Model.AttachmentId  -->
+                        <div asp-action="AttachmentView" asp-controller="User">
+                            <button style="background-color:#DCABAB; border-color: white; border-radius: 25px; color: white; padding: 10px 20px; margin-right: 10px;" asp-route-id=" @Model.MessagesId " asp-action="AttachmentView" asp-controller="User">Attachment</button>
+                        </div>
+
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                    </div>
+                </div>
+
+            </form>
+            <br />
+        </div>
+        <br />
+    </div>
+    <div>
+    </div>
+</section>
+
+
+
+
+<script>
+    // Function to display the pop-up message with formatted recipients
+    function displayRecipientsMessage(recipientsMessage) {
+        // Create the modal element
+        const modal = document.createElement('div');
+        modal.id = 'modal';
+        modal.classList.add('modal');
+
+        // Create the modal content
+        const modalContent = document.createElement('div');
+        modalContent.classList.add('modal-content');
+
+        // Create the close button
+        const closeButton = document.createElement('span');
+        closeButton.classList.add('close');
+        closeButton.innerHTML = '&times;';
+
+        // Create the recipients list
+        const recipientsList = document.createElement('ul');
+        recipientsList.id = 'selected-options-modal';
+
+        // Split the recipients message by newlines
+        const recipients = recipientsMessage.split('\n');
+
+        // Create and append each recipient as a list item
+        recipients.forEach(function (recipient) {
+            const listItem = document.createElement('li');
+            listItem.classList.add('selected-option-item');
+            listItem.innerHTML = `<span>${recipient}</span>`;
+            recipientsList.appendChild(listItem);
+        });
+
+        // Append the close button and recipients list to the modal content
+        modalContent.appendChild(closeButton);
+        modalContent.appendChild(recipientsList);
+
+        // Append the modal content to the modal element
+        modal.appendChild(modalContent);
+
+        // Append the modal element to the body
+        document.body.appendChild(modal);
+
+        // Add event listener for the close button
+        closeButton.addEventListener('click', function () {
+            modal.style.display = 'none';
+        });
+
+        // Add event listener for clicks outside the modal
+        window.addEventListener('click', function (event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Display the modal
+        modal.style.display = 'block';
+    }
+
+    // Function to handle the "Show Recipients" button click
+    function handleShowRecipients() {
+        // Get the recipients' addresses from the button's data attribute
+        var recipients = this.getAttribute('data-recipients');
+
+        // Split recipients by comma
+        var recipientList = recipients.split(',');
+
+        // Create a formatted list of recipients with numbering
+        var formattedRecipients = recipientList.map(function (email, index) {
+            var sentence = (index + 1) + '. ' + email.trim();
+            return sentence;
+        });
+
+        // Join the sentences with newlines
+        var recipientsMessage = formattedRecipients.join('\n');
+
+        // Display the formatted recipients in a pop-up message
+        displayRecipientsMessage(recipientsMessage);
+    }
+
+    // Get all the "Show Recipients" buttons
+    var showRecipientsButtons = document.querySelectorAll('.show-recipients-button');
+
+    // Add event listener for each "Show Recipients" button click
+    showRecipientsButtons.forEach(function (button) {
+        button.addEventListener('click', handleShowRecipients);
+    });
+</script>

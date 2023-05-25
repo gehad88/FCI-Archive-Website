@@ -1,0 +1,135 @@
+﻿@{
+    Layout = "_AdmainLayout"; // Set the layout for this view
+}
+@model modelfor_archive.Models.UserAcc // Define the model for this view
+
+<!-- User registration form -->
+<form asp-action="addUserPost" asp-controller="User" method="post" id="registrationForm">
+    <div class="container rounded bg-white mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-3 border-right">
+                <!-- Profile image -->
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                    <img class="rounded-circle mt-5" style="width:150px" src="/Default.png"> <!-- Display profile image -->
+                    <span class="font-weight-bold">@Model.UserName</span> <!-- Display user's username -->
+                    <span class="text-black-50"></span>
+                </div>
+            </div>
+            <div class="col-md-5 border-right">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right" style="color:#373C44">Add User</h4> <!-- Heading for the form -->
+                    </div>
+                    <div class="row mt-2">
+                        <div class="form-group col-md-6">
+                            <label class="labels" for="Gender">User Name</label>
+                            <input maxlength="30" type="text" required class="form-control" placeholder="User Name" name="UserName"> <!-- Input field for user's name -->
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="labels" for="userGender">Gender</label>
+                            <select required class="form-control" name="userGender">
+                                <!-- Dropdown for selecting gender -->
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="form-group col-md-12">
+                            <label class="labels" for="Phone">Mobile Number</label>
+                            <input type="text" pattern="[0-9]{11}" required class="form-control" placeholder="enter phone number" name="Phone"> <!-- Input field for phone number -->
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label class="labels" for="AcadMail">Email</label>
+                            <input maxlength="40" type="text" required class="form-control" value="@@Archive.com" placeholder="example@Archive.com" name="AcadMail" id="emailInput" pattern="[a-zA-Z]\w*@@Archive\.com" title="Email must start with a letter and end with @@Archive.com">
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <div id="emailAlert" class="alert alert-danger" style="display: none;"></div>
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label class="labels" for="Pass">Password</label>
+                            <div class="input-group">
+                                <input type="password" required pattern="(?=.*[A-Za-z].*[A-Za-z]).{8,20}" title="Password must be 8 to 20 characters long and contain at least two letters." class="form-control" placeholder="*******" name="Pass" id="passwordInput">
+                                <div class="input-group-append">
+                                    <i class="fa fa-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label class="labels" for="JobTitl">Job Title</label>
+                            <input maxlength="40" type="text" required class="form-control" placeholder="Job Title" name="JobTitle"> <!-- Input field for job title -->
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label class="labels" for="Department">Department</label>
+                            <input maxlength="40" type="text" required class="form-control" placeholder="Department" name="Department"> <!-- Input field for department -->
+                        </div>
+                    </div>
+                    <div class="form-group mt-5 text-center">
+                        <button type="submit" required style="width:120px; border-radius:15px; height:50px;color:#4D4C46; background-color:coral; border-color: coral; color: white;">Save Profile</button> <!-- Submit button to save the user's profile -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<script>
+    document.getElementById("registrationForm").addEventListener("submit", function (event) {
+        var emailInput = document.getElementById("emailInput");
+        var emailAlert = document.getElementById("emailAlert");
+
+        // Check if the email input is empty
+        if (emailInput.value.trim() === "") {
+            emailAlert.textContent = "Please enter an email.";
+            emailAlert.style.display = "block";
+            emailInput.focus();
+            event.preventDefault();
+            return;
+        }
+
+        // Make an AJAX request to check if the email already exists
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "/User/CheckEmail", true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var response = JSON.parse(xhr.responseText);
+                if (response.exists) {
+                    emailAlert.textContent = "An account with the specified email already exists.";
+                    emailAlert.style.display = "block";
+                    emailInput.focus();
+                } else {
+                    // If all validations pass, hide the alert and allow form submission
+                    emailAlert.style.display = "none";
+                    document.getElementById("registrationForm").submit();
+                }
+            }
+        };
+        xhr.send("email=" + encodeURIComponent(emailInput.value));
+        event.preventDefault(); // Prevent form submission
+    });
+
+    // Show alert messages if they exist
+    window.addEventListener("DOMContentLoaded", function () {
+        var alertMessage = "@TempData["AlertMessage"]";
+        var successMessage = "@TempData["SuccessMessage"]";
+        var errorMessage = "@TempData["ErrorMessage"]";
+
+        var alertDiv = document.getElementById("alertDiv");
+        if (alertMessage) {
+            alertDiv.innerHTML = '<div class="alert alert-danger">' + alertMessage + '</div>';
+        } else if (successMessage) {
+            alertDiv.innerHTML = '<div class="alert alert-success">' + successMessage + '</div>';
+            setTimeout(function () {
+                window.location.href = "/Home/ShowAll"; // Redirect to ShowAll page after 2 seconds
+            }, 2000);
+        } else if (errorMessage) {
+            alertDiv.innerHTML = '<div class="alert alert-danger">' + errorMessage + '</div>';
+        }
+    });
+</script>

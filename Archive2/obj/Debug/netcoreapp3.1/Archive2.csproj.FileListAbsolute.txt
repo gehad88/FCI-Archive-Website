@@ -1,0 +1,185 @@
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\Archive2.exe
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\Archive2.deps.json
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\Archive2.runtimeconfig.json
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\Archive2.runtimeconfig.dev.json
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\Archive2.dll
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\Archive2.pdb
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\Archive2.Views.dll
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\Archive2.Views.pdb
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.csproj.AssemblyReference.cache
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.AssemblyInfoInputs.cache
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.AssemblyInfo.cs
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.csproj.CoreCompileInputs.cache
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.RazorAssemblyInfo.cache
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.RazorAssemblyInfo.cs
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\staticwebassets\Archive2.StaticWebAssets.Manifest.cache
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\staticwebassets\Archive2.StaticWebAssets.Pack.cache
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.Archive2.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.Archive2.props
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.Archive2.props
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.Archive2.props
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.TagHelpers.input.cache
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.TagHelpers.output.cache
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.RazorCoreGenerate.cache
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.RazorTargetAssemblyInfo.cache
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.RazorTargetAssemblyInfo.cs
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.Views.pdb
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.dll
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.pdb
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.genruntimeconfig.cache
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.csproj.CopyComplete
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Home\UserHome.cshtml.g.cs
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Home\AdminHome.cshtml.g.cs
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\ITC\source\repos\Archive2\Archive2\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ITC\source\repos\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\appsettings.json
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\Archive2.exe
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\Archive2.deps.json
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\Archive2.runtimeconfig.json
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\Archive2.runtimeconfig.dev.json
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\Archive2.dll
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\Archive2.pdb
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\Archive2.Views.dll
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\Archive2.Views.pdb
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.csproj.AssemblyReference.cache
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.GeneratedMSBuildEditorConfig.editorconfig
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.AssemblyInfoInputs.cache
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.AssemblyInfo.cs
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.csproj.CoreCompileInputs.cache
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.MvcApplicationPartsAssemblyInfo.cache
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.RazorAssemblyInfo.cache
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.RazorAssemblyInfo.cs
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\staticwebassets\Archive2.StaticWebAssets.Manifest.cache
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\staticwebassets\Archive2.StaticWebAssets.Pack.cache
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.Archive2.Microsoft.AspNetCore.StaticWebAssets.props
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.Archive2.props
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.Archive2.props
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.Archive2.props
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.TagHelpers.input.cache
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.TagHelpers.output.cache
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.RazorCoreGenerate.cache
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Home\AdminHome.cshtml.g.cs
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Home\UserHome.cshtml.g.cs
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.RazorTargetAssemblyInfo.cache
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.RazorTargetAssemblyInfo.cs
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.Views.pdb
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.csproj.CopyComplete
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.dll
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.pdb
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Archive2.genruntimeconfig.cache
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Login\Login.cshtml.g.cs
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\User\addUser.cshtml.g.cs
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\User\editUser.cshtml.g.cs
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Home\ShowAll.cshtml.g.cs
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\User\SendMessage.cshtml.g.cs
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\User\ViewMessage.cshtml.g.cs
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Data\Export.cshtml.g.cs
+E:\FCI\FCI 3.2\SW\yarabfinal\Archive2\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Data\Import.cshtml.g.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\appsettings.json
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\Archive2.exe
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\Archive2.deps.json
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\Archive2.runtimeconfig.json
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\Archive2.runtimeconfig.dev.json
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\Archive2.dll
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\Archive2.pdb
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\Archive2.Views.dll
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\Archive2.Views.pdb
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Archive2.csproj.AssemblyReference.cache
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Archive2.GeneratedMSBuildEditorConfig.editorconfig
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Archive2.AssemblyInfoInputs.cache
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Archive2.AssemblyInfo.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Archive2.csproj.CoreCompileInputs.cache
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Archive2.MvcApplicationPartsAssemblyInfo.cache
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Archive2.RazorAssemblyInfo.cache
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Archive2.RazorAssemblyInfo.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\staticwebassets\Archive2.StaticWebAssets.Manifest.cache
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\staticwebassets\Archive2.StaticWebAssets.Pack.cache
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.Archive2.Microsoft.AspNetCore.StaticWebAssets.props
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.Archive2.props
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.Archive2.props
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.Archive2.props
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Archive2.TagHelpers.input.cache
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Archive2.TagHelpers.output.cache
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Archive2.RazorCoreGenerate.cache
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Data\Export.cshtml.g.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Data\Import.cshtml.g.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Home\AdminHome.cshtml.g.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Home\layoutEX.cshtml.g.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Home\ShowAll.cshtml.g.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Home\UserHome.cshtml.g.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Login\Login.cshtml.g.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\User\addUser.cshtml.g.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\User\editUser.cshtml.g.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\User\SendMessage.cshtml.g.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\User\ViewMessage.cshtml.g.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Archive2.RazorTargetAssemblyInfo.cache
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Archive2.RazorTargetAssemblyInfo.cs
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Archive2.Views.pdb
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Archive2.csproj.CopyComplete
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Archive2.dll
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Archive2.pdb
+D:\SW Engineering\Sixth term\Software Development\Project\Software-Development-Project-Gehad\Software-Development-Project-Gehad\Archive2\obj\Debug\netcoreapp3.1\Archive2.genruntimeconfig.cache

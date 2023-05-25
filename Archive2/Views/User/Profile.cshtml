@@ -1,0 +1,64 @@
+﻿@if (Model.IsAdmin == true) // Check if the user is an admin
+{
+    Layout = "_AdmainLayout"; // Set the layout to the admin layout
+}
+else
+{
+    Layout = "_UserLayout"; // Set the layout to the user layout
+}
+@model modelfor_archive.Models.UserAcc // Specify the model for this view
+
+<div class="row">
+    <div class="col-md-3 border-right">
+        <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+
+            @if (Model.userGender == modelfor_archive.Models.Gender.Male)
+            {
+                <img class="rounded-circle mt-5" width="150px" src="/userImage1.png">
+            }
+            else if (Model.userGender == modelfor_archive.Models.Gender.Female)
+            {
+                <img class="rounded-circle mt-5" width="150px" src="/userImage2.png">
+            }
+
+            <span class="font-weight-bold">@Model.UserName</span>
+            <span class="text-black-50"></span>
+        </div>
+    </div>
+    <div class="col-md-5 border-right">
+        <div class="p-3 py-5">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="text-right">Profile</h4>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-6">
+                    <label class="labels">User Name</label>
+                    <input type="text" class="form-control" placeholder="User Name" value="@Model.UserName" readonly>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <label class="labels">Mobile Number</label>
+                    <input type="text" class="form-control" placeholder="Mobile Number" value="@Model.Phone" readonly>
+                </div>
+                <div class="col-md-12">
+                    <label class="labels">Email</label>
+                    <input type="text" readonly class="form-control" placeholder="Email" value="@Model.AcadMail" readonly>
+                </div>
+                <div class="col-md-12">
+                    <label class="labels">Password</label>
+                    <input type="text" readonly class="form-control" placeholder="Password" value="@Model.Pass" readonly>
+                </div>
+
+                <div class="col-md-12">
+                    <label class="labels">Job Title</label>
+                    <input type="text" class="form-control" placeholder="Job Title" value="@Model.JobTitle" readonly>
+                </div>
+                <div class="col-md-12">
+                    <label class="labels">Department</label>
+                    <input type="text" class="form-control" placeholder="Department" name="Department" value="@Model.Department" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

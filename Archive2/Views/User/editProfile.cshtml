@@ -1,0 +1,128 @@
+﻿@if (Model.IsAdmin == true) // Check if the user is an admin
+{
+    Layout = "_AdmainLayout"; // Set the layout to the admin layout
+}
+else
+{
+    Layout = "_UserLayout"; // Set the layout to the user layout
+}
+@model modelfor_archive.Models.UserAcc // Specify the model for this view
+
+<form asp-controller="User" asp-action="editProfile" method="post">
+    <div class="row">
+        <div class="col-md-3 border-right">
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+
+                @if (Model.userGender == modelfor_archive.Models.Gender.Male)
+                {
+                    <img class="rounded-circle mt-5" style="width:150px" src="/userImage1.png">
+                }
+                else if (Model.userGender == modelfor_archive.Models.Gender.Female)
+                {
+                    <img class="rounded-circle mt-5" style="width:150px" src="/userImage2.png">
+                }
+
+                <span class="font-weight-bold">@Model.UserName</span>
+                <span class="text-black-50"></span>
+            </div>
+        </div>
+        <div class="col-md-5 border-right">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="text-right">Edit Profile</h4>
+                </div>
+                <div class="row mt-2">
+                    <div class="form-group col-md-6">
+                        <label asp-for="UserName">UserName</label>
+                        <input required asp-for="UserName" class="form-control" maxlength="30">
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="form-group col-md-12">
+                        <label required asp-for="Phone">Phone Number</label>
+                        <input pattern="[0-9]{11}" required placeholder="01012557364" asp-for="Phone" class="form-control">
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                    </div>
+                </div>
+
+                @if (Model.IsAdmin == true) // Check if the user is an admin
+                {
+                    <div class="row mt-3">
+                        <div class="form-group col-md-12">
+                            <label asp-for="AcadMail">Email</label>
+                            <input asp-for="AcadMail" class="form-control" maxlength="40" type="text" required class="form-control" placeholder="example@Archive.com" name="AcadMail" id="emailInput" pattern="[a-zA-Z]\w*@@Archive\.com" title="Email must start with a letter and end with @@Archive.com">
+                            <span asp-validation-for="AcadMail" class="text-danger"></span>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="row mt-3">
+                        <div class="form-group col-md-12">
+                            <label asp-for="AcadMail">Email</label>
+                            <input readonly asp-for="AcadMail" class="form-control" disabled>
+                            <span asp-validation-for="AcadMail" class="text-danger"></span>
+                        </div>
+                    </div>
+                }
+                
+
+                <div class="row mt-3">
+                    <div class="form-group col-md-12">
+                        <label asp-for="Pass">Password</label>
+                        <input type="text" required pattern="(?=.*[A-Za-z].*[A-Za-z]).{8,20}" placeholder="**********" asp-for="Pass" class="form-control">
+                        <span asp-validation-for="Pass" class="text-danger"></span>
+                    </div>
+                </div>
+                
+                @if (Model.IsAdmin == true) // Check if the user is an admin
+                {
+                    <div class="row mt-3">
+                        <div class="form-group col-md-12">
+                            <label asp-for="JobTitle">Job Title</label>
+                            <input asp-for="JobTitle" class="form-control" maxlength="40" type="text">
+                            <span asp-validation-for="JobTitle" class="text-danger"></span>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="row mt-3">
+                        <div class="form-group col-md-12">
+                            <label asp-for="JobTitle">Job Title</label>
+                            <input readonly asp-for="JobTitle" class="form-control" disabled>
+                            <span asp-validation-for="JobTitle" class="text-danger"></span>
+                        </div>
+                    </div>
+                }
+                
+                @if (Model.IsAdmin == true) // Check if the user is an admin
+                {
+                    <div class="row mt-3">
+                        <div class="form-group col-md-12">
+                            <label asp-for="Department">Department</label>
+                            <input asp-for="Department" class="form-control" maxlength="40" type="text">
+                            <span asp-validation-for="Department" class="text-danger"></span>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="row mt-3">
+                        <div class="form-group col-md-12">
+                            <label asp-for="Department">Department</label>
+                            <input readonly asp-for="Department" class="form-control" disabled>
+                            <span asp-validation-for="Department" class="text-danger"></span>
+                        </div>
+                    </div>
+                }
+
+                <div class="form-group mt-5 text-center">
+                    <button asp-action="editProfile" asp-controller="User" style="border-color:#12B2A6; background-color:#E64646" class="btn btn-primary profile-button" type="submit">Save Profile</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
